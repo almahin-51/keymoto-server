@@ -134,8 +134,8 @@ async function run() {
     // find admin
     app.get("/users/admin", async (req, res) => {
       // const email = req.params.email;
-      const query = { role: "admin" };
-      const user = await userCollection.find(query).toArray();
+      //   const query = { role: "admin" };
+      const user = await userCollection.find({}).toArray();
       // let isAdmin = false;
       // if (user?.role === 'admin') {
       //     isAdmin = true;
